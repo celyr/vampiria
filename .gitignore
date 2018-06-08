@@ -1,0 +1,14 @@
+/db
+npm-debug.log
+/assets/node_modules
+/priv/static/
+/_build
+/cover
+/deps
+/doc
+/.fetch
+erl_crash.dump
+*.ez
+*.beam
+/config/*.secret.exs
+/.elixir_ls
