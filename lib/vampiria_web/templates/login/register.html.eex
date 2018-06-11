@@ -1,0 +1,3 @@
+<div class="container">
+  <%= form_for @changeset, register_path(@conn, :do_register) %>
+</div>

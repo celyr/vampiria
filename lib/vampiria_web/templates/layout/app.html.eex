@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Vampiria - The Masquerade</title>
+    <title>1998 - Il fenomeno</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
@@ -16,17 +16,17 @@
       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
-            <%= link "Vampiria", to: "/", method: :get, class: "navbar-brand" %>
+            <%= link "1988 - In fenomeno", to: "/", method: :get, class: "navbar-brand" %>
           </div>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Chat</a></li>
+            <li class="active"><%= link "Mappa", to: "/map", method: :get %></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <%= if logged_in?(@conn) do %>
               <li><p class="navbar-text">Signed in as <%= current_user(@conn).user %></p></li>
-              <li><%= link "Logout", to: "/logout", method: :delete %></li>
+              <li><%= link "Esci", to: "/logout", method: :delete %></li>
             <% else %>
-              <li><%= link "Login", to: "/login" %></li>
+              <li><%= link "Accedi", to: "/login" %></li>
             <% end %>
           </ul>
         </div>
